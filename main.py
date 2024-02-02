@@ -1,13 +1,23 @@
 # main.py
 import io
 from fastapi import FastAPI, Depends, HTTPException, Request
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import StreamingResponse
 from weasyprint import HTML, CSS
 import uvicorn
 
 from models import PdfData
 
+
 app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 def generate_pdf(data: PdfData):
     # Đọc nội dung HTML từ file template.html và thực hiện thay thế các biến
