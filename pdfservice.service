@@ -13,7 +13,7 @@ Group=root
 
 WorkingDirectory=/root/Project/pdfservice
 
-ExecStart=/root/Project/pdfservice/env/bin/gunicorn -c gunicorn_conf.py main:app
+ExecStart=/root/Project/pdfservice/venv/bin/gunicorn -c gunicorn_conf.py main:app
 
 
 [Install]
