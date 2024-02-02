@@ -62,5 +62,5 @@ async def create_pdf(request: Request):
     return StreamingResponse(io.BytesIO(pdf_bytes), media_type="application/pdf", headers={"Content-Disposition": "attachment; filename=output.pdf"})
 
 
-# if __name__ == "__main__":
-#     uvicorn.run("main:app", reload=True)
+if __name__ == "__main__":
+    uvicorn.run("main:app", host="0.0.0.0", port=5000, log_level="info")
