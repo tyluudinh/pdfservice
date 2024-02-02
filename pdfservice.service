@@ -7,9 +7,9 @@ After=network.target
 
 [Service]
 
-User=ubuntu
+User=root
 
-Group=www-data
+Group=root
 
 WorkingDirectory=/root/Project/pdfservice
 
