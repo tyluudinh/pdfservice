@@ -19,6 +19,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+
+
 def generate_pdf(data: PdfData):
     # Đọc nội dung HTML từ file template.html và thực hiện thay thế các biến
     with open('templates/template.html', 'r') as template_file:
@@ -43,6 +45,14 @@ def generate_pdf(data: PdfData):
     pdf_bytes = main_doc.write_pdf()
 
     return pdf_bytes
+
+@app.get("/")
+def read_root():
+    return {
+        "success": True,
+        "message": "Welcome to PdfService",
+        "link": "https://github.com/tyluudinh/pdfservice"
+    } 
 
 @app.post("/generate_pdf/")
 async def create_pdf(request: Request):
