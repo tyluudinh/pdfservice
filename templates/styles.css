@@ -4,6 +4,10 @@
   /* src: url("fonts/Manrope/static/Manrope-Regular.ttf") format('truetype'); */
 }
 
+* {
+  font-family: 'Manrope', sans-serif;
+}
+
 
 header {
   position: fixed;

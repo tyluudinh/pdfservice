@@ -50,7 +50,7 @@ def generate_pdf(data: PdfData):
 def read_root():
     return {
         "success": True,
-        "version": "1.0.1",
+        "version": "1.0.2",
         "message": "Welcome to PdfService",
         "link": "https://github.com/tyluudinh/pdfservice"
     } 
