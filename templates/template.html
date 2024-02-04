@@ -1,64 +1,64 @@
 <html>
- <head>
-  <meta charset="utf-8" />
-  <title>{title}</title>
- </head>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>{title}</title>
+  </head>
 
- <header>
-  <div>
-   <img style="width: 149px; height: 48px" src="{logo}" alt="" />
-   <div id="watermark">
-      {watermark}
-   </div>
-  </div>
- </header>
- <body>
-  <div class="report-details-content">
-   <div class="report-details-header">
-    <h1 class="text-headline-1 fw-800 mb-0">
-     {title}
-    </h1>
-    <div class="description" id="id-report-details-description">
-     <div class="info">
-      <div class="type">{type}</div>
-      <svg
-       xmlns="http://www.w3.org/2000/svg"
-       width="16"
-       height="16"
-       viewBox="0 0 16 16"
-       fill="none"
-      >
-       <circle cx="8" cy="8" r="1.5" fill="#808CA2" stroke="#808CA2" />
-      </svg>
-      <div class="date">{date}</div>
-     </div>
+  <header>
+    <div>
+      <img style="width: 149px; height: 48px" src="{logo}" alt="" />
+      <div id="watermark">{watermark}</div>
     </div>
-   </div>
-   <div class="divider"></div>
-   <div class="report-description binding fr-view">
-      {content}
-   </div>
-  </div>
- </body>
- <footer>
-  <div>
-   <p
-    style="
-     color: #0057ff;
-     font-family: Manrope;
-     font-size: 12px;
-     font-style: normal;
-     font-weight: 400;
-     line-height: 16px;
-     margin: 0;
-     display: flex;
-    "
-   >
-    <a href="https://www.vietcap.com.vn">vietcap.com.vn</a>
-    <a style="text-align: center; margin-left: 164px; font-style: italic"
-     >Downloaded by {downloaded_by}
-    </a>
-   </p>
-  </div>
- </footer>
+  </header>
+  <body>
+    <div class="report-details-content">
+      <div class="report-details-header">
+        <h1 class="text-headline-1 fw-800 mb-0">{title}</h1>
+        <div class="description" id="id-report-details-description">
+          <div class="info">
+            <div class="type">{type}</div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+            >
+              <circle cx="8" cy="8" r="1.5" fill="#808CA2" stroke="#808CA2" />
+            </svg>
+            <div class="date">{date}</div>
+          </div>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="report-description binding fr-view">{content}</div>
+    </div>
+  </body>
+  <footer>
+    <div>
+      <p
+        style="
+          color: #0057ff;
+          font-family: Manrope;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 16px;
+          margin: 0;
+          display: flex;
+        "
+      >
+        <a href="https://www.vietcap.com.vn">vietcap.com.vn</a>
+        <a style="text-align: center; margin-left: 164px; font-style: italic"
+          >Downloaded by {downloaded_by}
+        </a>
+      </p>
+    </div>
+  </footer>
 </html>
